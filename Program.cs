@@ -9,21 +9,21 @@
 Console.Clear();
 
 Console.WriteLine("Введите число:");
-int Num = int.Parse(Console.ReadLine());
+int N =Math.Abs(int.Parse(Console.ReadLine()!));;
 
-if (Num < 100)
+if (N < 100)
 {
     Console.WriteLine("В этом числе 3-я цифра отсутствует");
 }
 
-while (Num >= 100)
+while (N >= 100 )
 {
-    if (Num < 1000)
+    if (N < 1000)
     {
-        int Number = Num % 10;
+        int Number = N % 10;
         Console.WriteLine("Третья цифра в числе: " + Number);
     }
-    Num = Num / 10;
+    N = N / 10;
 }
 
 
